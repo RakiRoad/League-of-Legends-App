@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/poro"
     tools:context="rakiroad.riotapp.Home">
 
 
@@ -13,59 +14,44 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:gravity="center_horizontal"
-        android:inputType="textPersonName"
-        android:paddingTop="20dp"
+        android:hint="Enter Summoner Name"
+        android:inputType="text"
         tools:layout_editor_absoluteX="83dp"
         tools:layout_editor_absoluteY="182dp"
-        tools:text="Enter Summoner Name"
-        android:layout_above="@+id/editText2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp" />
+        android:layout_marginTop="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/selectRegion"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="45dp"
-        android:layout_marginTop="0dp"
-        android:ems="10"
-        android:gravity="center_horizontal"
-        android:inputType="none"
-        android:paddingTop="20dp"
-        android:text="Select Region" />
 
     <Spinner
         android:id="@+id/selectRegion"
-        android:layout_width="200dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="227dp"
         android:gravity="center_horizontal"
-        android:paddingTop="20dp"
         android:prompt="@string/Select_Region"
         android:spinnerMode="dropdown"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="271dp" />
+        tools:layout_editor_absoluteY="271dp"
+        android:layout_below="@+id/summonerName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" />
 
     <Button
         android:id="@+id/btnSearch"
-        android:text="Search"
-        android:textColor="#FFFFFF"
-        android:textSize="14sp"
-
         android:layout_width="150dp"
         android:layout_height="40dp"
+
         android:background="@drawable/button"
         android:shadowColor="#A8A8A8"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
-        android:layout_marginTop="15dp"
-        android:layout_below="@+id/editText2"
-        android:layout_centerHorizontal="true" />
+        android:text="Search"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="139dp" />
 
 
 </RelativeLayout>

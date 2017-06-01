@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name">Riot App</string>
+    <string name="app_name">LOL MMR CALCULATOR</string>
 
     <string name="Select_Region">Select Region</string>
 
     <string-array name="Regions">
+        <item>Select a Region...</item>
         <item>North America</item>
         <item>Europe West</item>
         <item>Europe East</item>
