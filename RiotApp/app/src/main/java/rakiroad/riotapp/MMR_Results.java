@@ -14,6 +14,6 @@ public class MMR_Results extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.results_page);
-        //Toast.makeText(this, "Why do they fear me?", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Why do they fear me?", Toast.LENGTH_LONG).show();
     }
 }
