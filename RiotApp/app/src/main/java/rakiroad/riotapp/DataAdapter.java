@@ -90,7 +90,7 @@ public class DataAdapter {
     //Combine this with emailExists later to check both password and email with a single query
     public boolean correctPassword(String email, String passwordEntered){
         try {
-            String query = "SELECT password FROM users WHERE email=" + email;
+            String query = "SELECT password FROM users WHERE email=\"" + email + "\"";
 
             Cursor c = mDb.rawQuery(query, null);
 
