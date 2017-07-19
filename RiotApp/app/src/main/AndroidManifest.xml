@@ -19,6 +19,7 @@
             android:name=".HomeActivity"
             android:exported="true"></activity>
         <activity android:name=".MMR_ResultsActivity" />
+        <activity android:name=".DisplayResult"/>
         <activity
             android:name=".LoginActivity"
             android:exported="true"
