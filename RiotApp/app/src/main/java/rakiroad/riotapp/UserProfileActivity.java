@@ -7,13 +7,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.io.InputStream;
 
-import lulu.Game;
-import lulu.Region;
-import requests.SummonerRequest;
-import summoner.Summoner;
+import rakiroad.riotapp.ThatTastedPurple.lulu.Region;
+import rakiroad.riotapp.ThatTastedPurple.requests.SummonerRequest;
+import rakiroad.riotapp.ThatTastedPurple.summoner.Summoner;
 
 public class UserProfileActivity extends AppCompatActivity {
 
@@ -32,9 +32,10 @@ public class UserProfileActivity extends AppCompatActivity {
         }
 
         ImageView imgLeagueIcon = (ImageView)findViewById(R.id.imgLeagueIcon);
+        TextView textViewSummoner = (TextView)findViewById(R.id.textViewSummoner);
         //loadImageFromURL("http://ddragon.leagueoflegends.com/cdn/7.10.1/img/profileicon/1631.png", imgLeagueIcon);
-        //new DownloadImageTask(imgLeagueIcon).execute("http://ddragon.leagueoflegends.com/cdn/7.10.1/img/profileicon/" + me.getProfileIconId() + ".png");     //this will be the user's current league icon when we import wrapper
-
+        new DownloadImageTask(imgLeagueIcon).execute("http://ddragon.leagueoflegends.com/cdn/7.14.1/img/profileicon/" + me.getProfileIconId() + ".png");     //this will be the user's current league icon when we import wrapper
+        textViewSummoner.setText("Welcome " + me.getName() + "!");
     }
 
     private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
