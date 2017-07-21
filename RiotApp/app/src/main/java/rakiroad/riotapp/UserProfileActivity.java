@@ -9,9 +9,11 @@ import android.util.Log;
 import android.widget.ImageView;
 
 import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
+
+import lulu.Game;
+import lulu.Region;
+import requests.SummonerRequest;
+import summoner.Summoner;
 
 public class UserProfileActivity extends AppCompatActivity {
 
@@ -20,9 +22,18 @@ public class UserProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile);
 
+        Summoner me = null;
+
+        try {
+            me = SummonerRequest.getSummoner(32641520, Region.NA);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("i love memes");
+        }
+
         ImageView imgLeagueIcon = (ImageView)findViewById(R.id.imgLeagueIcon);
         //loadImageFromURL("http://ddragon.leagueoflegends.com/cdn/7.10.1/img/profileicon/1631.png", imgLeagueIcon);
-        new DownloadImageTask(imgLeagueIcon).execute("http://ddragon.leagueoflegends.com/cdn/7.10.1/img/profileicon/1631.png");     //this will be the user's current league icon when we import wrapper
+        //new DownloadImageTask(imgLeagueIcon).execute("http://ddragon.leagueoflegends.com/cdn/7.10.1/img/profileicon/" + me.getProfileIconId() + ".png");     //this will be the user's current league icon when we import wrapper
 
     }
 
