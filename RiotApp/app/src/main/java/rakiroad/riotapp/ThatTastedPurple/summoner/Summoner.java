@@ -78,7 +78,8 @@ public class Summoner {
 	
 	
 	//---------- Setters ----------//
-	
+	//public void setId(long summonerID) { this.id = summonerID; }
+
 	public void setChampionMasteryScore(int score){
 		this.championMasteryScore = score;
 	}

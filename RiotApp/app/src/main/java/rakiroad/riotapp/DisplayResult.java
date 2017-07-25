@@ -6,7 +6,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
 /**
- * Created by Rocky on 7/19/2017.
+NO LONG NEEDED!!!!!!!!!!!!!!!!!!!!!!!!
+ NO LONG NEEDED!!!!!!!!!!!!!!!!!!!!!!!!
+ NO LONG NEEDED!!!!!!!!!!!!!!!!!!!!!!!!
+ NO LONG NEEDED!!!!!!!!!!!!!!!!!!!!!!!!
+ NO LONG NEEDED!!!!!!!!!!!!!!!!!!!!!!!!
+ NO LONG NEEDED!!!!!!!!!!!!!!!!!!!!!!!!
+ NO LONG NEEDED!!!!!!!!!!!!!!!!!!!!!!!!
+ NO LONG NEEDED!!!!!!!!!!!!!!!!!!!!!!!!
+ NO LONG NEEDED!!!!!!!!!!!!!!!!!!!!!!!!
+
  */
 
 public class DisplayResult  extends AppCompatActivity{

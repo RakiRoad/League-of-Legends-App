@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
-import java.net.ProtocolException;
 import java.net.URL;
 
 /**
@@ -20,7 +19,7 @@ public class APIRequest extends AsyncTask<String, Void, String> {
 	/**
 	 * API Key to send requests with
 	 */
-	public static final String API_KEY = "RGAPI-16c9d8fe-1e34-4034-90de-89fe4bb21df0";
+	public static final String API_KEY = "RGAPI-7f82d451-afa9-4fda-9fcc-d010ca245424";
 	public String resultString;
 	
 	/**
